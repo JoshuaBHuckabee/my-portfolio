@@ -1,15 +1,15 @@
 <!-- src/pages/index.astro -->
----
+--- 
+import "../styles/global.css";
 ---
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Jane Doe</title>
-    <link rel="stylesheet" href="/styles/global.css" />
+    <title>Josh Huckabee</title>
   </head>
   <body>
     <header>
-      <h1>Jane Doe</h1>
+      <h1>Josh Huckabee</h1>
       <nav>
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
@@ -24,13 +24,20 @@
       </section>
 
       <section id="projects">
-        <h2>Projects</h2>
-        <!-- Add project cards here -->
-      </section>
+  		<h2>Projects</h2>
+  		<div class="project-grid">
+    	  <div class="project-card">
+      		  <h3>Design System</h3>
+      		  <p>Reusable components and tokens for a SaaS app.</p>
+      		  <a href="#">GitHub ↗</a>
+    	  </div>
+    	<!-- More projects -->
+  		</div>
+	  </section>
 
       <section id="contact">
         <h2>Contact</h2>
-        <a href="mailto:jane@example.com">Email Me</a>
+        <a href="mailto:jbhuckabee@gmail.com">Email Me</a>
       </section>
     </main>
   </body>
