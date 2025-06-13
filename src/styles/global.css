@@ -1,12 +1,37 @@
-body {
-  font-family: system-ui, sans-serif;
-  background: #fdfdfd;
-  color: #222;
-  padding: 2rem;
-  line-height: 1.6;
+/* src/styles/global.css */
+:root {
+  --bg: #fdfdfd;
+  --text: #222;
+  --accent: #0070f3;
+  font-size: 16px;
 }
 
-main {
-  max-width: 600px;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  padding: 2rem;
+  max-width: 768px;
   margin: 0 auto;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+a:hover {
+  text-decoration: underline;
 }

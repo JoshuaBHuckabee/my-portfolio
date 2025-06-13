@@ -1,11 +1,37 @@
+<!-- src/pages/index.astro -->
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Jane Doe</title>
+    <link rel="stylesheet" href="/styles/global.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Jane Doe</h1>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
 
-<Layout>
-	<Welcome />
-</Layout>
+    <main>
+      <section id="about">
+        <h2>About</h2>
+        <p>I’m a frontend developer focused on design systems and accessible UIs.</p>
+      </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+        <!-- Add project cards here -->
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <a href="mailto:jane@example.com">Email Me</a>
+      </section>
+    </main>
+  </body>
+</html>
