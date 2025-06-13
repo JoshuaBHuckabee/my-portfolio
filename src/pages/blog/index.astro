@@ -1,0 +1,40 @@
+---
+
+import "../../styles/global.css";
+
+const posts = [
+  {
+    title: "First Post",
+    slug: "first-post",
+    date: "2025-06-13",
+    description: "How I built this cyberpunk site in Astro.",
+  },
+  {
+    title: "Second Post",
+    slug: "second-post",
+    date: "2025-06-12",
+    description: "Reflections on dark themes and digital vibes.",
+  },
+];
+---
+
+<html lang="en">
+  <head>
+    <title>Blog | Josh Huckabee</title>
+  </head>
+  <body>
+    <header>
+      <h1>Blog</h1>
+      <p>Posts about design, code, and cyber aesthetics.</p>
+    </header>
+    <main>
+      {posts.map(post => (
+        <article style="margin-bottom: 2rem;">
+          <h2><a href={`/blog/${post.slug}`}>{post.title}</a></h2>
+          <small>{post.date}</small>
+          <p>{post.description}</p>
+        </article>
+      ))}
+    </main>
+  </body>
+</html>
